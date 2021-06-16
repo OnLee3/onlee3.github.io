@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "관찰하는 개발자 Blog"
+title                    : "LDB"
 title_separator          : "|"
 subtitle                 : "Version 1.0"
 name                     : "Leon"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "OnLee3/OnLee3.github.io"
 teaser                   : "/assets/images/IMG_0073.JPG"
 logo                     : "/assets/images/IMG_0073.JPG"
-masthead_title           : "관찰하는 개발자 Blog"
+masthead_title           : "Leon's Develop Blog"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Leon"
   avatar           : "/assets/images/IMG_0963.JPG"
-  bio              : "관찰하는 걸 좋아합니다. <br> 좋아하니까 관찰하기도 하고 관찰하다가 좋아하기도 하고."
+  bio              : "관찰하는 걸 좋아합니다. <br> 기록하는 걸 좋아합니다."
   location         : "Republic of Korea"
   email            : "dlwotjr2@gmail.com"
   links:
