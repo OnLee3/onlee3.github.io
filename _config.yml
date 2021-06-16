@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Leon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/IMG_0963.JPG"
   bio              : "I Love you."
   location         : "Republic of Korea"
   email            : "dlwotjr2@gmail.com"
