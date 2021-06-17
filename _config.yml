@@ -274,8 +274,6 @@ defaults:
       path: ""
       type: posts
     values:
-      show_date : #true
-      #date_format: "%Y-%m-%d"
       layout: single
       author_profile: true
       read_time: true
