@@ -274,12 +274,12 @@ defaults:
       path: ""
       type: posts
     values:
-      show_date : true
-      date_format: "%Y-%m-%d"
+      show_date : #true
+      #date_format: "%Y-%m-%d"
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: #true
       share: true
       related: true
       
