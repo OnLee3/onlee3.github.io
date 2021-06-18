@@ -16,7 +16,7 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "Leon'sBlog"
+title: "Leon's Blog"
 title_separator: "|"
 subtitle: "Version 1.0"
 name: "Leon"
