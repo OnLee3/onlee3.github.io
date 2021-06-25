@@ -1,5 +1,8 @@
 ---
 layout: single
+toc: true
+toc_label: "Study Note"
+toc_icon: "cog"
 title: "노마드코더스 유튜브 클론코딩 강의필기 'INTRODUCTION TO EXPRESS'"
 ---
 
