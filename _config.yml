@@ -24,7 +24,7 @@ description: "개발일지 끄적이면서 공부하는 블로그입니다."
 url: "https://OnLee3.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "OnLee3/OnLee3.github.io"
-teaser: "/assets/images/IMG_0073.JPG"
+teaser: #"/assets/images/IMG_0073.JPG"
 logo: "/assets/images/IMG_0073.JPG"
 masthead_title: "Leon's Blog"
 # breadcrumbs            : false # true, false (default)
