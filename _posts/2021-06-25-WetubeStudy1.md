@@ -10,8 +10,6 @@ toc_sticky: true
 
 ## INTRODUCTION TO EXPRESS
 
----
-
 ### 3.0 Your First Server
 
 ```jsx
