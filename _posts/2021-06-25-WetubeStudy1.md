@@ -8,9 +8,6 @@ toc_icon: "pen-nib"
 toc_sticky: true
 ---
 
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 정리한 내용입니다.
-개인적으로 오래 기억하고 돌아보기 위해 작성했으며, 혹여 문제가 될 부분이 있다면 수정하거나 삭제하겠습니다._
-
 ## INTRODUCTION TO EXPRESS
 
 ### 3.0 Your First Server
@@ -251,3 +248,8 @@ const handleListening = () =>
 
 app.listen(PORT, handleListening);
 ```
+
+---
+
+_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 정리한 내용입니다.
+개인적으로 오래 기억하고 돌아보기 위해 작성했으며, 혹여 문제가 될 부분이 있다면 수정하거나 삭제하겠습니다._
