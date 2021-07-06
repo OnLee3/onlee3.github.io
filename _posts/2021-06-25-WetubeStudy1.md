@@ -36,7 +36,7 @@ app.listen(PORT, handleListening);
 
 ### 3.1 GET Requests
 
-![png](/assets/images/20210625_01.png)
+![png](/assets/images/wetube/20210625_01.png)
 
 - 서버가 request에 respond하는 법을 배워볼 것.
   1. /
