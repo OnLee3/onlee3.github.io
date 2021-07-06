@@ -88,8 +88,8 @@ social:
 analytics:
   provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: G-RZ8FQ0XE6W
+    anonymize_ip: false
 
 # Site Author
 author:
