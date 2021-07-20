@@ -91,8 +91,8 @@ analytics:
     tracking_id: G-RZ8FQ0XE6W
     anonymize_ip: false
 
-  # Site Author
-  #author:
+# Site Author
+author:
   name: "Leon"
   avatar: "/assets/images/avatar.JPG"
   bio: "정리하고 공부하는 블로그입니다."
@@ -265,7 +265,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       related: true
@@ -276,4 +276,4 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
