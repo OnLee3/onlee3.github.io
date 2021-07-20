@@ -20,7 +20,7 @@ title: "Leon's Blog"
 title_separator: #"|"
 subtitle: #"Version 1.0"
 name: "Leon"
-description: "정리하고 공부하는 블로그입니다."
+description: "생각하고 정리하는 블로그입니다."
 url: "https://OnLee3.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "OnLee3/OnLee3.github.io"
@@ -95,7 +95,7 @@ analytics:
 author:
   name: "Leon"
   avatar: "/assets/images/avatar.JPG"
-  bio: "정리하고 공부하는 블로그입니다."
+  bio: "생각하고 정리하는 블로그입니다."
   location: #"Republic of Korea"
   email: "dlwotjr2@gmail.com"
   links:

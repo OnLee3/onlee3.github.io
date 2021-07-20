@@ -120,11 +120,11 @@
   width: 36px;
   height: 36px;
 
-  @include breakpoint($large) {
+  /*@include breakpoint($large) {
     display: block;
     width: auto;
     height: auto;
-  }
+  }*/
 
   img {
     max-width: 110px;
@@ -132,10 +132,10 @@
     border-radius: 50%;
     object-fit: cover;
 
-    @include breakpoint($large) {
+    /*@include breakpoint($large) {
       padding: 5px;
       border: 0.5px solid $light-gray;
-    }
+    }*/
   }
 }
 
