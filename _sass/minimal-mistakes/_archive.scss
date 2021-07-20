@@ -40,6 +40,7 @@
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
+    border-bottom: none;
   }
 }
 
@@ -49,7 +50,6 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-bottom: none;
 
   a[rel="permalink"]::before {
     content: "";
