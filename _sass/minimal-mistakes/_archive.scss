@@ -44,8 +44,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: none;
-  /*origin : margin-bottom: 0.25em;*/
+  margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -58,6 +57,7 @@
     top: 0;
     right: 0;
     bottom: 0;
+    text-decoration: none;
   }
 
   a + a {
