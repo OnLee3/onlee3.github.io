@@ -40,7 +40,6 @@
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
-    border-bottom: none;
   }
 }
 
@@ -213,6 +212,7 @@
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
+    border-bottom: none;
   }
 
   .archive__item-excerpt {
