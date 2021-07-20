@@ -49,7 +49,6 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-decoration-line: none;
 
   a[rel="permalink"]::before {
     content: "";
@@ -213,7 +212,6 @@
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
-    border-bottom: none;
   }
 
   .archive__item-excerpt {
