@@ -46,9 +46,10 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  line-height: 0%;
+  line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-bottom: none;
 
   a[rel="permalink"]::before {
     content: "";
