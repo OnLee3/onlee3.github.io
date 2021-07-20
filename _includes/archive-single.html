@@ -23,7 +23,7 @@ post.id %} {% assign title = post.title | markdownify | remove: "
           class="fas fa-link"
           aria-hidden="true"
           title="permalink"
-          style="text-decoration: none"
+          style="text-decoration-line: none"
         ></i
         ><span class="sr-only">Permalink</span></a
       >
@@ -31,7 +31,7 @@ post.id %} {% assign title = post.title | markdownify | remove: "
       <a
         href="{{ post.url | relative_url }}"
         rel="permalink"
-        style="text-decoration: none"
+        style="text-decoration-line: none"
         >{{ title }}</a
       >
       {% endif %}
