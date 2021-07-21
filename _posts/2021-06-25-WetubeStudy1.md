@@ -1,14 +1,14 @@
 ---
-title: "유튜브 클론코딩 1.INTRODUCTION TO EXPRESS [노마드코더스]"
+title: "유튜브 클론코딩 : Express"
 layout: single
 categories: CloneCoding
 toc: true
-toc_label: "Study Note"
+toc_label: "Index"
 toc_icon: "pen-nib"
 toc_sticky: true
 ---
 
-## INTRODUCTION TO EXPRESS
+## 3. INTRODUCTION TO EXPRESS
 
 ### 3.0 Your First Server
 
@@ -251,4 +251,4 @@ app.listen(PORT, handleListening);
 
 ---
 
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 정리한 내용입니다._
+_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
