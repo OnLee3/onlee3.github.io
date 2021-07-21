@@ -2,6 +2,12 @@
    ARCHIVE
    ========================================================================== */
 
+//custom
+.archive__item-title.no_toc > a {
+  text-decoration-line: none;
+}
+
+//origin
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
