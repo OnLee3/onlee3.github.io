@@ -7,6 +7,12 @@
   text-decoration-line: none;
 }
 
+.archive__thumbnail {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+}
+
 //origin
 .archive {
   margin-top: 1em;
@@ -25,6 +31,9 @@
 }
 
 .archive__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 
   a {
