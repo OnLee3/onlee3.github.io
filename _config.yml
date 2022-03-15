@@ -139,6 +139,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/ze__ski/"
+    - label: "Archive"
+      icon: "fa fa-archive"
+      url: "https://leon.oopy.io/"
 
 # Reading Files
 include:
