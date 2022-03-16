@@ -282,5 +282,5 @@ defaults:
       author_profile: false
 
 # custom
-default_thumbnail: "/assets/images/algorithm/Algo702-00001.png"
+# default_thumbnail: "/assets/images/algorithm/Algo702-00001.png"
 date_format: "%Y-%m-%d"

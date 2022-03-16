@@ -26,7 +26,9 @@
         {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
         {% include page__meta.html type=include.type %}
       </div>
-      <img class="archive__thumbnail" src="{{ post.thumbnail | default: site.default_thumbnail }}" />
+      {% if post.thumbnail %}
+        <img class="archive__thumbnail" src="{{ post.thumbnail }}" />
+      {% endif %}
   </article>
   <hr>
 </div>
