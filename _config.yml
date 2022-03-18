@@ -16,23 +16,23 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Site Settings
 locale: "ko-KR"
-title: "Leon's Blog"
+title: "AshRock"
 title_separator: #"|"
 subtitle: #"Version 1.0"
-name: "Leon"
+name: "AshRock"
 description: "생각하고 정리하는 블로그입니다."
-url: "https://OnLee3.github.io"
+url: "https://onlee3.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "OnLee3/OnLee3.github.io"
+repository: "onlee3/onlee3.github.io"
 teaser: #"/assets/images/IMG_0073.JPG"
 # logo: "/assets/images/logo.JPG"
-masthead_title: "Leon's Blog"
+masthead_title: "AshRock Blog"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname: "LEON" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: "AshRock" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name: "Leon"
+  name: "AshRock"
   avatar: "/assets/images/avatar.JPG"
   bio: "생각하고 정리하는 블로그입니다."
   location: #"Republic of Korea"
