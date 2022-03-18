@@ -25,5 +25,10 @@
         {% endif %}
       </span>
     {% endif %}
+    {% if document.categories %}
+      <span class="page__meta-categories">
+        {{ document.categories }}
+      </span>
+    {% endif %}
   </p>
 {% endif %}

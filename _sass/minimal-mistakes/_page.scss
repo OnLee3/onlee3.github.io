@@ -293,9 +293,20 @@ body {
     margin: 0;
   }
 
+  span {
+    margin-right: 0.5em;
+  }
+
   a {
     color: inherit;
   }
+}
+
+.page__meta-categories {
+  padding: 0.5em;
+  border-radius: 0.375em;
+  color: $background-color;
+  background-color: $base04;
 }
 
 .page__meta-title {
