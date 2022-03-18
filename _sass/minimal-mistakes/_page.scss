@@ -342,9 +342,9 @@ body {
   margin-bottom: 2em;
   padding-bottom: 1em;
 
-  &:not(:last-child) {
-    border-bottom: solid 1px $border-color;
-  }
+  // &:not(:last-child) {
+  //   border-bottom: solid 1px $border-color;
+  // }
 
   .archive__item-title {
     margin-top: 0;
