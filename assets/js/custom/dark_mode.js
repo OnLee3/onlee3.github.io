@@ -9,8 +9,10 @@ if (darkTheme) {
   const themeState = (() => {
     let theme = localStorage.getItem("theme");
     if (!theme) {
-      theme = "default";
-      localStorage.setItem("theme", "default");
+      theme = matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "default";
+      localStorage.setItem("theme", theme);
     }
     return {
       isDark() {
