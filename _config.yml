@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "onlee3/onlee3.github.io"
 teaser: #"/assets/images/IMG_0073.JPG"
 # logo: "/assets/images/logo.JPG"
-masthead_title: "AshRock Blog"
+masthead_title: "AshRock"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
