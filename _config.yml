@@ -88,7 +88,7 @@ social:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: G-RZ8FQ0XE6W
+    tracking_id: G-JCZ80CXRHX
     anonymize_ip: false
 
 # Site Author
