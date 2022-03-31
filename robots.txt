@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onlee3.github.io/sitemap.xml
+Sitemap: https://ashrock.kr/sitemap.xml
