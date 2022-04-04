@@ -302,16 +302,22 @@ body {
   }
 }
 
-.page__meta-category {
+.page__meta-category, .page__meta-tag{
   padding: 0.5em;
   border-radius: 0.375em;
+  &:hover {
+    font-style: italic;
+    color: $primary-color;
+    background-color: $background-color;
+  }
+}
+
+.page__meta-category {
   color: $primary-color;
   background-color: $border-color;
 }
 
 .page__meta-tag {
-  padding: 0.5em;
-  border-radius: 0.375em;
   color: $border-color;
   background-color: $primary-color;
 }
@@ -357,6 +363,11 @@ body {
   border-radius: 0.375em;
   font-size: 0.875em;
   text-decoration: none;
+  &:hover {
+    font-style: italic;
+    color: $primary-color !important;
+    background-color: $background-color;
+  }
 }
 .page__taxonomy-tag {
   color: $border-color !important;
