@@ -309,6 +309,13 @@ body {
   background-color: $border-color;
 }
 
+.page__meta-tag {
+  padding: 0.5em;
+  border-radius: 0.375em;
+  color: $border-color;
+  background-color: $primary-color;
+}
+
 .page__meta-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
@@ -345,9 +352,22 @@ body {
 //   border: 1px solid mix(#000, $border-color, 25%);
 //   border-radius: $border-radius;
 
-.page__taxonomy-item {
+.page__taxonomy-category, .page__taxonomy-tag {
+  padding: 0.5em;
+  border-radius: 0.375em;
+  font-size: 0.875em;
   text-decoration: none;
 }
+.page__taxonomy-tag {
+  color: $border-color !important;
+  background-color: $primary-color;
+}
+
+.page__taxonomy-category {
+  color: $primary-color;
+  background-color: $border-color;
+}
+
 
 .taxonomy__section {
   margin-bottom: 2em;

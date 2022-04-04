@@ -34,5 +34,14 @@
       </a>
       {% endfor %}
     {% endif %}
+    {% if document.tags %}
+      {% for tag in document.tags %}
+      <a href="/tags/#{{tag}}">
+        <span class="page__meta-tag">
+          {{ tag }}
+        </span>
+      </a>
+      {% endfor %}
+    {% endif %}
   </p>
 {% endif %}
