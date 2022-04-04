@@ -302,9 +302,10 @@ body {
   }
 }
 
-.page__meta-categories {
+.page__meta-category {
   padding: 0.5em;
   border-radius: 0.375em;
+  text-decoration-line: none;
   color: $primary-color;
   background-color: $border-color;
 }

@@ -26,9 +26,13 @@
       </span>
     {% endif %}
     {% if document.categories %}
-      <span class="page__meta-categories">
-        {{ document.categories }}
-      </span>
+      {% for category in document.categories %}
+      <a href="/categories/#{{category}}">
+        <span class="page__meta-category">
+          {{ category }}
+        </span>
+      </a>
+      {% endfor %}
     {% endif %}
   </p>
 {% endif %}
