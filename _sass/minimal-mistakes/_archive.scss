@@ -7,10 +7,23 @@
   text-decoration-line: none;
 }
 
-.archive__thumbnail {
+.archive__content {
+  width: calc(100% - 124px);
+}
+
+.archive__thumbnail-container {
+  position: absolute;
+  right: 0;
   width: 112px;
-  height: 112px;
-  object-fit: cover;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: $navicon-link-color-hover;
+}
+
+.archive__thumbnail {
 }
 
 //origin
@@ -32,7 +45,6 @@
 
 .archive__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   margin: 1em 0em;
