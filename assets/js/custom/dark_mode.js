@@ -33,12 +33,12 @@ if (darkTheme) {
   })();
 
   function themePainter() {
+    darkTheme.disabled = !themeState.isDark();
+    defaultTheme.disabled = themeState.isDark();
     if (themeState.isDark()) {
-      defaultTheme.disabled = true;
       commentsLightTheme.style.display = "none";
       commentsDarkTheme.style.display = "block";
     } else {
-      darkTheme.disabled = false;
       commentsLightTheme.style.display = "block";
       commentsDarkTheme.style.display = "none";
     }
