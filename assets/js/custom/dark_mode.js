@@ -35,12 +35,14 @@ if (darkTheme) {
   function themePainter() {
     darkTheme.disabled = !themeState.isDark();
     defaultTheme.disabled = themeState.isDark();
-    if (themeState.isDark()) {
-      commentsLightTheme.style.display = "none";
-      commentsDarkTheme.style.display = "block";
-    } else {
-      commentsLightTheme.style.display = "block";
-      commentsDarkTheme.style.display = "none";
+    if (commentsLightTheme && commentsDarkTheme) {
+      if (themeState.isDark()) {
+        commentsLightTheme.style.display = "none";
+        commentsDarkTheme.style.display = "block";
+      } else {
+        commentsLightTheme.style.display = "block";
+        commentsDarkTheme.style.display = "none";
+      }
     }
   }
 
