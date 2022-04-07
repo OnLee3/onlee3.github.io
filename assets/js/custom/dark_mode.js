@@ -5,6 +5,13 @@ const darkTheme = [...document.styleSheets].find((style) =>
   /(main_dark.css)$/.test(style.href)
 );
 
+const commentsLightTheme = document.querySelector(
+  "#utterances-comments__light-mode"
+);
+const commentsDarkTheme = document.querySelector(
+  "#utterances-comments__dark-mode"
+);
+
 if (darkTheme) {
   const themeState = (() => {
     let theme = localStorage.getItem("theme");
@@ -26,8 +33,15 @@ if (darkTheme) {
   })();
 
   function themePainter() {
-    darkTheme.disabled = !themeState.isDark();
-    defaultTheme.disabled = themeState.isDark();
+    if (themeState.isDark()) {
+      defaultTheme.disabled = true;
+      commentsLightTheme.style.display = "none";
+      commentsDarkTheme.style.display = "block";
+    } else {
+      darkTheme.disabled = false;
+      commentsLightTheme.style.display = "block";
+      commentsDarkTheme.style.display = "none";
+    }
   }
 
   function themeHandler() {
