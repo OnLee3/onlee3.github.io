@@ -313,12 +313,11 @@ body {
 }
 
 .page__meta-category {
-  color: $primary-color;
-  background-color: $border-color;
+  color: $primary-color !important;
 }
 
 .page__meta-tag {
-  color: $border-color;
+  color: white !important;
   background-color: $primary-color;
 }
 
@@ -370,13 +369,12 @@ body {
   }
 }
 .page__taxonomy-tag {
-  color: $border-color !important;
+  color: white !important;
   background-color: $primary-color;
 }
 
 .page__taxonomy-category {
-  color: $primary-color;
-  background-color: $border-color;
+  color: $primary-color !important;
 }
 
 
