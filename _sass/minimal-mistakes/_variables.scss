@@ -55,6 +55,8 @@ $h-size-6: 1em !default; // ~16px
    Colors
    ========================================================================== */
 
+$category-color: mix($primary-color, #000, 70%);
+
 $gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
