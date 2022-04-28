@@ -4,7 +4,7 @@ layout: single
 categories: [알고리즘]
 tags: [LeetCode, 자바스크립트]
 thumbnail: https://leetcode.com/static/images/LeetCode_logo_rvs.png
-excerpt: 언뜻 배열로 착각하고 reverse같은 메서드들을 시도해볼 수 있지만, List의 형태로 주어지기때문에 배열에서 사용하는 메서드들을 사용할 수 없습니다.문제 설명에서, 각 List가 어떻게 구성되는지 알수있는 함수가 주어집니다.
+excerpt: "언뜻 배열로 착각하고 reverse같은 메서드들을 시도해볼 수 있지만, List의 형태로 주어지기때문에 배열에서 사용하는 메서드들을 사용할 수 없습니다.문제 설명에서, 각 List가 어떻게 구성되는지 알수있는 함수가 주어집니다."
 toc: true
 toc_sticky: true
 ---
