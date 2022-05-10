@@ -152,7 +152,9 @@
       </section>
     {% when "utterances" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
-      <section id="utterances-comments__dark-mode"></section>
+      {% if site.dark_theme_toggle %}
+        <section id="utterances-comments__dark-mode"></section>
+      {% endif %}
       <section id="utterances-comments__light-mode"></section>
     {% when "custom" %}
       {% include /comments-providers/custom.html %}

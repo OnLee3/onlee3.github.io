@@ -287,6 +287,6 @@ defaults:
 date_format: "%Y-%m-%d"
 
 # dark_mode scripts
-dark_theme_toggle: true
+dark_theme_toggle: false
 after_footer_scripts:
-  - /assets/js/custom/dark_mode.js
+  # - /assets/js/custom/dark_mode.js
