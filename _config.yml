@@ -270,7 +270,8 @@ defaults:
     values:
       layout: single
       author_profile: false
-      read_time: true
+      show_date: true
+      read_time: false
       comments: true
       related: true
 
