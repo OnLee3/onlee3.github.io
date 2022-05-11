@@ -2,8 +2,11 @@
 
 {% if site.category_archive.type and page.categories[0] %}
 <p class="page__taxonomy">
+  <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
   {% include category-list.html %}
   {% if site.tag_archive.type and page.tags[0] %}
+    <br/>
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
     {% include tag-list.html %}
   {% endif %}
 </p>
