@@ -279,25 +279,6 @@ body {
   }
 }
 
-.page__meta-category, .page__meta-tag{
-  padding: 0.5em;
-  border-radius: 0.375em;
-  &:hover {
-    font-style: italic;
-    color: $primary-color;
-    background-color: $background-color;
-  }
-}
-
-.page__meta-category {
-  color: $primary-color !important;
-}
-
-.page__meta-tag {
-  color: white;
-  background-color: $category-color;
-}
-
 .page__meta-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
@@ -325,9 +306,10 @@ body {
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  &:hover {
-    font-style: italic;
-  }
+}
+
+.taxonomy-item--main:not(a:last-child > .taxonomy-item--main) {
+  padding-right: initial;
 }
 
 .taxonomy__section {

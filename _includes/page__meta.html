@@ -28,7 +28,7 @@
     {% if document.categories %}
       {% for category in document.categories %}
       <a href="/categories/#{{category}}">
-        <span class="page__meta-category">
+        <span class="page__taxonomy-item taxonomy-item--main">
           {{ category }}
         </span>
       </a>
@@ -37,7 +37,7 @@
     {% if document.tags %}
       {% for tag in document.tags %}
       <a href="/tags/#{{tag}}">
-        <span class="page__meta-tag">
+        <span class="page__taxonomy-item taxonomy-item--main">
           {{ tag }}
         </span>
       </a>
