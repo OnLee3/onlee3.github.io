@@ -16,15 +16,17 @@
   right: 0;
   width: 112px;
   aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 12px;
   background-color: $navicon-link-color-hover;
+  a {
+    display: flex;
+    height: 100%;
+  }
 }
 
 .archive__thumbnail {
-  max-height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 //origin
