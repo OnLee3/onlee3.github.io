@@ -2,16 +2,20 @@
 title: "유튜브 클론코딩 : User Profile"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: '생성한 계정의 프로필을 관리할 수 있도록, 정보 변경, 이미지 업로드, 비디오 정보 받아오기 등을 구현합니다.'
 toc: true
 toc_sticky: true
 ---
 
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
+
 # 8. USER PROFILE
-
----
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
 
 ## 8.0 Edit Profile GET
 
@@ -333,7 +337,7 @@ if !loggedInUser.socialOnly
 ### 1. 사전 준비
 
 - 계정 삭제
-  - db.sessions, db.users, .remove({})
+  - `db.sessions`, `db.users`, `.remove({})`
 - 깃허브로그인 or 일반로그인을 위한 middleware 생성
   - 반복되는 코드가 있다면, 미들웨어 생성을 고려해야함
 - controller에서 사용하기전에, input에 name이랑 type 생성

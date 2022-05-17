@@ -2,20 +2,24 @@
 title: "유튜브 클론코딩 : Flash Messages"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: 'express-flash를 통해 토스트 메시지를 구현합니다.'
 toc: true
 toc_sticky: true
 ---
 
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
+
 # 15. FLASH MESSAGES
-
----
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
 
 ## 15.0 Installation
 
-현재 문제
+### 현재 문제
 
 publicOnlyMiddleware를 통해, 로그인한 유저는 login 페이지에 못가게 막고 있음.
 
@@ -23,10 +27,10 @@ publicOnlyMiddleware를 통해, 로그인한 유저는 login 페이지에 못가
 
 ### express-flash
 
-- npm i express-flash
+- `npm i express-flash`
 - 템플릿에서 사용자에게 메세지를 남길 수 있도록 도와줌
 - session에 근거하기 때문에, 한 사용자만이 볼 수 있음
-- req.flash 함수 사용가능
+- `req.flash` 함수 사용가능
   - `req.flash("type", "message")`
   - 어디에서나 쓸 수 있지만, 보통 redirect할 때 메시지를 보냄.
 
@@ -53,7 +57,7 @@ export const publicOnlyMiddleware = (req, res, next) => {
 
 ## 15.1 Sending Messages
 
-req.flash()를 사용하는 건, locals 속성을 만드는 것
+`req.flash()`를 사용하는 건, locals 속성을 만드는 것
 
 - "messages" locals를 사용하게 해줌
 - locals는 템플릿에서 사용가능
@@ -67,7 +71,7 @@ body
             span=messages.error
 ```
 
-- req.flash()에서 설정("error")한 타입으로 속성 가져올수 있음
+- `req.flash()`에서 설정("error")한 타입으로 속성 가져올수 있음
 
 ### mixin과 scss를 이용해 꾸미기
 

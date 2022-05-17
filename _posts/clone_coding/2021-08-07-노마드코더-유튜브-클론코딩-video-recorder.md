@@ -2,16 +2,20 @@
 title: "유튜브 클론코딩 : Video Recorder"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: '유저가 브라우저에서 영상 녹화를 할 수 있도록 구현합니다.'
 toc: true
 toc_sticky: true
 ---
 
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
+
 # 13. VIDEOS RECORDER
-
----
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
 
 ## 13.0 Recorder Setup
 

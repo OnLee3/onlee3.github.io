@@ -2,16 +2,19 @@
 title: "유튜브 클론코딩 : User Authentication"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: '회원가입 및 로그인 그리고 Oauth를 이용한 깃허브 로그인을 구현합니다.'
 toc: true
 toc_sticky: true
 ---
 
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+
 # 7. USER AUTHENTICATION
-
----
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
 
 ## 7.0 Create Account part One
 
@@ -565,8 +568,8 @@ app.use(
 > dotenv
 
 - env 파일을 읽고 각 변수들을 process.env에 넣음
-- npm i dotenv
-- requrie('dotenv').config()
+- `npm i dotenv`
+- `requrie('dotenv').config()`
 
   최대한 앞에 놔주는게 좋음
 
@@ -699,7 +702,7 @@ export const finishGithubLogin = async (req, res) => {
 
 - fetch가 필요한데 서버엔 없음
   - node-fetch
-  - npm i node-fetch
+  - `npm i node-fetch`
   - import
 
 > Step 3 access_token을 가지고 API에 접근

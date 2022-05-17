@@ -2,16 +2,20 @@
 title: "유튜브 클론코딩 : Video Player"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: '비디오 플레이어를 직접 구현해봅니다.'
 toc: true
 toc_sticky: true
 ---
 
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
+
 # 11. VIDEO PLAYER
-
----
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
 
 ## 11.0 Player Setup
 

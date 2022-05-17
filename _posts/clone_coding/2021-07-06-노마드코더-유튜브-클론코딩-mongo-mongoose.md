@@ -2,20 +2,26 @@
 title: "유튜브 클론코딩 : MongoDB and Mongoose"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: 'MongoDB를 연결하고, CRUD 기능을 연습합니다.'
 toc: true
 toc_sticky: true
 ---
 
-## 6. MONGODB AND MONGOOSE
+> 해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
 
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
+# 6. MONGODB AND MONGOOSE
 
-### 6.0 Array Database part One
+## 6.0 Array Database part One
 
 - Data를 어떻게 Back end에 post하는가?
 
-video ID에 따라 URL 부여하기.
+### video ID에 따라 URL 부여하기.
 
 ```jsx
 //video.pug
@@ -43,7 +49,7 @@ mixin video(video)
             li #{video.views} views.
 ```
 
-/videos/:id URL접속시 watch.pug 렌더링
+### /videos/:id URL접속시 watch.pug 렌더링
 
 ```jsx
 //videoController.js
@@ -91,14 +97,14 @@ export const upload = (req, res) => res.send("Upload");
 export const deleteVideo = (req, res) => res.send("Delete Video");
 ```
 
-### 6.1 Array Database part Two
+## 6.1 Array Database part Two
 
-목표 (watch.pug)
+### 목표 (watch.pug)
 
 1. view 숫자 표시
 2. edit URL로 가는 href 생성
 
-> Ternary Operator
+### Ternary Operator
 
 ```jsx
 //watch.pug
@@ -110,7 +116,7 @@ block content
 // 그렇지 않다면 "views" 출력
 ```
 
-> Absolute URL 과 Relative URL
+### Absolute URL 과 Relative URL
 
 ```jsx
 //watch.pug
@@ -137,7 +143,7 @@ block content
 //    localhost:4000/videos/edit
 ```
 
-> 결과
+### 결과
 
 ```jsx
 //watch.pug
@@ -153,9 +159,10 @@ block content
 
 ![2](/assets/images/wetube/20210706-00002.png)
 
-### 6.2 Edit Video part One
 
-Edit Video (Submit 버튼을 클릭할때, form의 행동)
+## 6.2 Edit Video part One
+
+### Edit Video (Submit 버튼을 클릭할때, form의 행동)
 
 1. videoController.js에서 edit 편집
 2. GET Request and POST Request의 차이
@@ -189,10 +196,10 @@ export const edit = (req, res) => {
 };
 ```
 
-> GET 과 POST의 차이
+### GET 과 POST의 차이
 
 1. GET
-   - 기본적으로 method(form과 back end 사이의 정보 전송에 관한 방식)는 GET이다.
+   - 기본 method(form과 back end 사이의 정보 전송에 관한 방식)는 GET이다.
    - 비디오를 검색하거나 할때 사용할 것.
 2. POST
 
@@ -302,16 +309,16 @@ videoRouter.post("/:id(\\d+)/edit", postEdit);
 export default videoRouter;
 ```
 
-> 결과화면
+### 결과화면
 
 - Save클릭시, 같은 URL로 POST하게 된다.
 - 아직 postEdit의 return을 구현하지 않았으므로 무한로딩이뜸.
 
 ![4](/assets/images/wetube/20210706-00004.png)
 
-### 6.3 Edit Video part Two
+## 6.3 Edit Video part Two
 
-> Recap
+### Recap
 
 - Submit 버튼을 클릭할때, form의 행동을 다뤘었음.
 - Method
@@ -321,7 +328,7 @@ export default videoRouter;
     - 뭔가를 수정하거나 추가하거나 삭제하고 싶나? → POST
     - 데이타를 받는게 목적 → GET
 
-> route()를 이용한 shortcut
+### `route()`를 이용한 shortcut
 
 - 하나의 URL에 get,post 방식을 쓰도록 할때 유용함.
 
@@ -342,7 +349,7 @@ videoRouter.post("/:id(\\d+)/edit", postEdit); 와 같음
 export default videoRouter;
 ```
 
-> res.redirect()
+### `res.redirect()`
 
 - 브라우저가 해당 URL redirect (자동으로 이동)하도록 하는 것.
 
@@ -357,7 +364,7 @@ export const postEdit = (req, res) => {
 };
 ```
 
-> express.urlencoded
+### `express.urlencoded()`
 
 - express application이 form의 value들을 이해할 수 있도록 하고, 우리가 쓸 수 있는 자바스크립트 형식으로 바꾸어 줄 것 이다.
 
@@ -366,7 +373,7 @@ export const postEdit = (req, res) => {
 app.use(express.urlencoded({ extended: true }));
 ```
 
-> 결과
+### 결과
 
 - input 내용에 따라 video title 변경
 
@@ -392,25 +399,25 @@ app.use(express.urlencoded({ extended: true }));
 
 ![6](/assets/images/wetube/20210706-00006.png)
 
-### 6.4 Recap
+## 6.4 Recap
 
-> req.body
+### req.body
 
 1. form 안에 있는 value의 javascript representation
 2. app.use(express.urlencoded)를 이용해야만 사용가능.
    - 해당 middleware의 순서도 중요! videoRouter보다 먼저 앞에 와야만 req.body가 준비되있음.
 3. input에 name을 설정해주지 않으면, req.body는 비어있음.
 
-> mongodb and mongoose
+### mongodb and mongoose
 
 1. mongodb
    - 초급자,상급자 모두 다루기 좋은 database.
 2. mongoose
    - 이를 통해 자바스크립트에서 mongodb와 상호작용 할 것. /blue
 
-### 6.5 More Practice part One
+## 6.5 More Practice part One
 
-연습 (GET Request 와 POST Request)
+### 연습 (GET Request 와 POST Request)
 
 > controller를 만든다.
 
@@ -507,15 +514,15 @@ export const postUpload = (req, res) => {
 };
 ```
 
-> 결과화면
+### 결과화면
 
 ![7](/assets/images/wetube/20210706-00007.png)
 
 ![8](/assets/images/wetube/20210706-00008.png)
 
-### 6.7 Introduction to MongoDB
+## 6.7 Introduction to MongoDB
 
-> MongoDB
+### MongoDB
 
 1. general purpose
 2. document-based
@@ -525,18 +532,18 @@ export const postUpload = (req, res) => {
    - JSON-like documents.
    - document를 검색하고 만들거나 삭제할 기회를 줌.
 
-> 설치
+### 설치
 
-[Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+- [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 
-### 6.8 Connecting to Mongo
+## 6.8 Connecting to Mongo
 
-> mongoose
+### mongoose
 
 1. node.js와 mongoDB를 이어주는 다리
 2. validation, query building, hook 등 많은 게 존재하고 대단한 친구임.
 
-> 터미널로 mongoDB 확인
+### 터미널로 mongoDB 확인
 
 1. mongod 입력으로 설치 확인
 2. mongo 입력으로 mongodb실행
@@ -545,15 +552,15 @@ export const postUpload = (req, res) => {
    - show dbs
      - 가지고 있는 데이타베이스를 보여줌.
 
-> 터미널로 mongoose 설치
+### 터미널로 mongoose 설치
 
 - npm i mongoose
 
-> db.js 생성
+### db.js 생성
 
 ![9](/assets/images/wetube/20210706-00009.png)
 
-> mongoose 연결
+### mongoose 연결
 
 ```jsx
 //db.js
@@ -569,7 +576,7 @@ import "./db";
 // 파일 그 자체를 import함. 이 파일을 import 해줌으로써, 서버가 mongo에 연결됨.
 ```
 
-> db.js 설정
+### db.js 설정
 
 ```jsx
 //db.js
@@ -590,13 +597,13 @@ db.on("error", handleError);
 db.once("open", handleOpen);
 ```
 
-### 6.9 CRUD Introduction
+## 6.9 CRUD Introduction
 
-> 계획
+### 계획
 
 - 진짜 Database를 이용해서 CRUD를 만들 것.
 
-> video.js 생성
+### video.js 생성
 
 - mongoose에게 우리의 애플리케이션의 data가 어떻게 생겼는지 알려줘야함.
 
@@ -604,9 +611,9 @@ db.once("open", handleOpen);
 
     ![10](/assets/images/wetube/20210706-00010.png)
 
-### 6.10 Video Model
+## 6.10 Video Model
 
-> 데이터의 형식 정해주기
+### 데이터의 형식 정해주기
 
 - 어떤 유형의 Data를 받는지 정해주기.
 - 실제적인 내용을 넣는건 user의 몫
@@ -628,7 +635,7 @@ const videoSchema = new mongoose.Schema({
 });
 ```
 
-> Video model 만들기
+### Video model 만들기
 
 ```jsx
 //Video.js
@@ -638,7 +645,7 @@ const Video = mongoose.model("Video", videoSchema);
 export default Video;
 ```
 
-> Video model import
+### Video model import
 
 ```jsx
 //server.js
@@ -649,9 +656,9 @@ import "./db";
 import "./models/Video";
 ```
 
-### 6.11 Our First Query
+## 6.11 Our First Query
 
-> Server.js와 init.js
+### Server.js와 init.js
 
 - 관련된 것들끼리 역할을 분리시켜줌.
   - sever
@@ -699,7 +706,7 @@ const handleListening = () =>
 app.listen(PORT, handleListening);
 ```
 
-> 가짜 Database 삭제
+### 가짜 Database 삭제
 
 ```jsx
 //videoController.js
@@ -732,7 +739,7 @@ export const postUpload = (req, res) => {
 };
 ```
 
-> Videomoel 사용
+### Videomoel 사용
 
 - callback
   - 무언가가 발생하고 난 다음 호출되는 function
@@ -753,9 +760,9 @@ export const home = (req, res) => {
 };
 ```
 
-### 6.12 Our First Query part Two
+## 6.12 Our First Query part Two
 
-> callback
+### callback
 
 ```jsx
 Video.find({}, (error, videos) => {});
@@ -764,7 +771,7 @@ Video.find({}, (error, videos) => {});
 1. mongoose는 {}부분을 database에서 불러온다.
 2. database가 반응하면 mongoose는 (error, videos) function을 실행시킨다.
 
-> 출력순서
+### 출력순서
 
 - 코드에 따라 실행되는 시간이 다를 수 있다.
 - 바깥 console.log과 GET request가 끝난 후, video 내부 console.log가 실행되는 모습.
@@ -782,9 +789,9 @@ export const home = (req, res) => {
 
 ![11](/assets/images/wetube/20210706-00011.png)
 
-### 6.13 Async Await
+## 6.13 Async Await
 
-> callback
+### callback
 
 - 장점
   - 에러들을 여기에서 바로 볼 수 있음.
@@ -801,7 +808,7 @@ Video.find({}, (error, videos) => {
 });
 ```
 
-> promise
+### promise
 
 - callback의 최신 버전
 - async안의 function일때만, await 사용가능
@@ -819,16 +826,16 @@ await는 database를 기다려줌.즉 위의 예시처럼 뒤죽박죽 콘솔로
 };
 ```
 
-### 6.14 Returns and Renders
+## 6.14 Returns and Renders
 
 - return을 사용하면 function이 종료된다.
   - 무언가 값을 반환 하지 않더라도, function을 종료하는 역할로도 쓰임.
 - render는 여러 번 사용 불가능.
   - redirect, sendStatus, end 등 포함
 
-### 6.15 Creating a Video part One
+## 6.15 Creating a Video part One
 
-Video 생성
+### Video 생성
 
 > 정보를 받을 input 생성
 
@@ -891,7 +898,7 @@ export const postUpload = (req, res) => {
 };
 ```
 
-### 6.16 Creating a Video part Two
+## 6.16 Creating a Video part Two
 
 - mongoose가 어느정도 data validation을 하고 있다.
   - 정해준 data type과 다른 정보를 넣으면 출력하지 않음.
@@ -946,9 +953,9 @@ export const postUpload = async (req, res) => {
 
 - 터미널에서 확인이 가능해짐.
 
-### 6.17 Exceptions and Validation
+## 6.17 Exceptions and Validation
 
-- Error가 발생하는 경우
+### Error가 발생하는 경우
 
   - 잘못된 data type 입력
     - number를 요구하는데 string을 입력한 경우
@@ -1000,7 +1007,7 @@ const Video = mongoose.model("Video", videoSchema);
 export default Video;
 ```
 
-### 6.18 More Schema
+## 6.18 More Schema
 
 [Mongoose v5.13.2: SchemaTypes](https://mongoosejs.com/docs/schematypes.html)
 
@@ -1057,7 +1064,7 @@ mixin video(video)
         hr
 ```
 
-### 6.19 Video Detail
+## 6.19 Video Detail
 
 > 오류1 : upload href 접속시 오류
 
@@ -1114,9 +1121,9 @@ export const watch = async (req, res) => {
 };
 ```
 
-### 6.20 Edit Video part One
+## 6.20 Edit Video part One
 
-> exec()
+> `exec()`
 
 - execute를 호출하면 promise가 return 될 것 이다.
 - 현재 지워도 상관없는 이유는, async랑 await를 쓰고 있기 때문.
@@ -1206,7 +1213,7 @@ input(
 
 ![17](/assets/images/wetube/20210706-00017.png)
 
-### 6.21 Edit Video part Two
+## 6.21 Edit Video part Two
 
 > POST Request
 
@@ -1250,7 +1257,7 @@ video.hashtags = hashtags
   .map((word) => (word.startsWith("#") ? word : `#${word}`));
 ```
 
-### 6.22 Edit Video part Three
+## 6.22 Edit Video part Three
 
 > 방법 2 : findByIdAndUpdate()
 
@@ -1294,7 +1301,7 @@ export const postEdit = async (req, res) => {
 const video = await Video.exists({ _id: id });
 ```
 
-### 6.23 Middlewares
+## 6.23 Middlewares
 
 > Database reset
 
@@ -1340,7 +1347,7 @@ videoSchema.pre("save", async function () {
 });
 ```
 
-### 6.24 Statics
+## 6.24 Statics
 
 - save hooks 같은 경우는 update할 문서에 접근이 가능함
 - findOneAndUpdate의 경우에는 접근할 수 없음
@@ -1422,7 +1429,7 @@ mixin video(video)
         hr
 ```
 
-### 6.25 Delete Video
+## 6.25 Delete Video
 
 > Step 1. watch.pug에서 링크 만들어주기
 
@@ -1461,9 +1468,9 @@ export const deleteVideo = async (req, res) => {
 
 - 특별한 이유가 있지 않은 이상 findByIdAndRemove 대신 findByIdAndDelete를 쓰는 게좋다
 
-### 6.26 Search part One
+## 6.26 Search part One
 
-> 1. 정렬
+### 정렬
 
 - mongoose는 굉장히 훌륭한 쿼리엔진을 갖고 있음
   - 문서들을 보여주는 방식을 수정할 수 있다
@@ -1477,7 +1484,7 @@ export const home = async (req, res) => {
 };
 ```
 
-> 2. Search
+### 검색
 
 > globalrouter, videoController 생성
 
@@ -1549,7 +1556,7 @@ console.dir(req.params.name);
 // => 'tj'
 ```
 
-### 6.27 Search part Two
+## 6.27 Search part Two
 
 > 검색 기능 만들기
 
@@ -1617,7 +1624,7 @@ export const search = async (req, res) => {
 };
 ```
 
-### 6.28 Conclusions
+## 6.28 Conclusions
 
 - CRUD 완성
 - 이 섹션은 Mongoose와 친해지기 위한 목적

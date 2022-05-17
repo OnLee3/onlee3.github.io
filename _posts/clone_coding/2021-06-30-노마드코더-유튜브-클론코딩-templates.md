@@ -2,15 +2,20 @@
 title: "유튜브 클론코딩 : Templates"
 layout: single
 categories: 프로젝트
-tags: [클론코딩, 유튜브]
+tags: [노마드코더, 유튜브]
+header:
+  overlay_image: '/assets/images/wetube/youtube.png'
+  overlay_filter: 0.5
+thumbnail: '/assets/images/wetube/youtube.png'
+excerpt: 'Pug의 기능을 배우며, 마크업 구성을 위한 준비를 합니다.'
 toc: true
 toc_sticky: true
 ---
 
+>해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다.
+>
+
 ## 5. TEMPLATES
-
-_해당 내용은 [노마드코더스](https://nomadcoders.co/) 유튜브 클론코딩 강의를 듣고 진행하며 정리한 내용입니다._
-
 ### 5.0 Returning HTML
 
 - HTML을 불러오는 두가지 방법
@@ -58,7 +63,7 @@ app.listen(PORT, handleListening);
 - pug
   - template engine
 - 순서
-  1. npm i pug
+  1. `npm i pug`
   2. pug를 view engine으로 지정
   3. 실제 pug 파일 생성
 
@@ -82,9 +87,6 @@ Wetube footer &copy; 2021 Wetube
   - 이 경우는, package.json의 위치.
 
 ### 5.2 Partials.
-
-[app.set(name, value)](https://www.notion.so/210c348e862b4d48a9ab40ab5809214d)
-
 - views default
 
   - express에게 views 폴더가 어디있는지 알려줘야함.
@@ -105,10 +107,13 @@ Wetube footer &copy; 2021 Wetube
 - Partials
 
   ![img1](/assets/images/wetube/20210630-01.png)
-
 ```html
-doctype html html(lang="ko") head title Wetube body h1 Welcome to Wetube include
-partials/footer.pug
+  doctype html html(lang="ko") 
+    head 
+      title Wetube 
+    body 
+      h1 Welcome to Wetube 
+      include partials/footer.pug
 ```
 
 - footer 같은 부분을 매페이지 마다 수정하기는 번거로움.
@@ -122,27 +127,37 @@ partials/footer.pug
 2. block
    - pug에서, 다른 페이지에서 내용을 채워넣을 수 있도록 공간을 만들어 낼 수 있음.
    - block을 채우지 않고 공란으로 냅둬도 작동함.
-
 ```jsx
 // base.pug
-doctype html html(lang="ko") head block head body block content
-include partials/footer.pug
-// home.pug
-// 만들어둔 base.pug를 불러옴 extends
-base.pug
-// 만들어둔 block을 불러 내용을 채워옴. block head title Home | Wetube
-block content h1 home!
+  doctype html html(lang="ko") 
+    head 
+      block head 
+    body 
+      block content
+      include partials/footer.pug
+  // home.pug
+  // 만들어둔 base.pug를 불러옴 extends
+    base.pug
+  // 만들어둔 block을 불러 내용을 채워옴. 
+    block head 
+      title Home | Wetube
+    block content 
+      h1 home!
 ```
 
 ### 5.4 Variables to Templates
 
-- render()는 두가지 인자를 받는다.
+- `render()`는 두가지 인자를 받는다.
   1. view의 이름
   2. template에 보낼 변수
 
-```html
-// base.pug doctype html html(lang="ko") head // #{}을 사용해 변수를 받도록함.
-title #{pageTitle} | Wetube body block content include partials/footer.pug
+```jsx
+// base.pug 
+// #{}을 사용해 변수를 받도록함.
+doctype html html(lang="ko") 
+  head title #{pageTitle} | Wetube 
+  body block content 
+    include partials/footer.pug
 ```
 
 ```jsx
@@ -162,7 +177,7 @@ _위의 결과로 렌더링된 title_
 ### 5.6 MVP Styles
 
 - CSS는 마지막에 적용할 예정
-- 그러나 못생긴걸 만들고 있으면 의욕이 떨어지므로, 기본 template으로 MVP.css를 적용시키고 진행
+- 그러나 못생긴걸 만들고 있으면 의욕이 떨어지므로, 기본 template으로써 `MVP.css`를 적용시키고 진행
 
 ```jsx
 base.pug
@@ -179,6 +194,9 @@ html(lang="ko")
 ```
 
 ### 5.7 Conditionals
+
+> pug에서 변수를 지정하는 방법 1,2
+>
 
 ```jsx
 //base.pug
@@ -198,7 +216,8 @@ html(lang="ko")
     include partials/footer.pug
 ```
 
-_pug에서 변수를 지정하는 방법 1,2_
+> pug에서 conditional (if, else)를 적용하는 모습
+>
 
 ```jsx
 //base.pug
@@ -213,7 +232,7 @@ html(lang="ko")
                 small Hello #{fakeUser.username}
             nav
                 ul
-										//fake.User.loggedIn이 true일 경우 아랫값을 반환
+//fake.User.loggedIn이 true일 경우 아랫값을 반환
                     if fakeUser.loggedIn
                         li
                             a(href="/login") Log out
@@ -226,7 +245,8 @@ html(lang="ko")
     include partials/footer.pug
 ```
 
-_pug에서 conditional (if, else)를 적용하는 모습_
+>가짜 user정보를 만들어서 object 형태의 변수를 pug에 넘겨주는 모습
+>
 
 ```jsx
 // videoControlloer.js
@@ -240,13 +260,13 @@ export const trending = (req, res) => {
 };
 ```
 
-_가짜 user정보를 만들어서 object 형태의 변수를 pug에 부여하는 모습_
 
 ### 5.8 Iteration
+- Elements의 list를 보여주는 것.
+- 이를 위해선 template에 array인 variable이 있어야함.
 
-- Iteration
-  - Elements의 list를 보여주는 것.
-  - 이를 위해선 template에 array인 variable이 있어야함.
+> 어떻게 하면 array 형태의 변수를 template에 보낼 수 있을까?
+>
 
 ```jsx
 // videoController.js
@@ -256,7 +276,8 @@ export const trending = (req, res) => {
 };
 ```
 
-_어떻게 하면 array 형태의 변수를 template에 보낼 수 있을까?_
+> each in을 사용하여 해결
+>
 
 ```jsx
 //home.pug
@@ -268,23 +289,26 @@ block content
     ul
         each video in videos
             li=video
-				else
+        else
             li Sorry nothing found.
 // video = currenvalue of loop, 즉 videos array안의 각 item. (이름은 자유롭게 지어도됨)
 // videos = videoController에서 받아온 array형태의 변수. (이름이 서로 일치해야함)
-```
-
-_each in을 사용하여 해결_
+``` 
 
 ### 5.9 Mixins
 
+> mixin인 video.pug의 경로
+>
+
 ![img3](/assets/images/wetube/20210630-03.png)<br>
-_mixin인 video.pug의 경로_
 
 - Mixin
   1. partials(footer.pug같은 것) that we can receive data
   2. 똑똑한 partial
   3. 데이터를 받을 수 있는 일종의 미리 만들어진 HTML BLOCK
+
+> object형태의 data를 home.pug에 보내서 렌더링하는 모습.
+>
 
 ```jsx
 // videoController.js
@@ -319,7 +343,8 @@ export const trending = (req, res) => {
 };
 ```
 
-_object형태의 data를 home.pug에 보내서 렌더링하는 모습._
+> mixin인 video.pug를 불러오는 모습
+>
 
 ```jsx
 //home.pug
@@ -337,7 +362,8 @@ block content
         li Sorry nothing found.
 ```
 
-_mixin인 video.pug를 불러오는 모습_
+> mixin인 video.pug. partial과는 다르게 변수정보를 받는다
+>
 
 ```jsx
 //video.pug
@@ -351,12 +377,8 @@ mixin video(info)
             li #{info.views} views.
 ```
 
-_mixin인 video.pug. partial과는 다르게 변수정보를 받는다_
-
 ### 5.10 Recap
-
-- Iteration, Mixin 복습
-  1. Iteration
-     - list의 모든 element들을 HTML에 보여주는 것
-  2. Mixin
-     - 다른 데이터를 포함하지만 같은 HTML을 보여주는것
+1. Iteration
+   - list의 모든 element들을 HTML에 보여주는 것
+2. Mixin
+   - 다른 데이터를 포함하지만 같은 HTML을 보여주는것
