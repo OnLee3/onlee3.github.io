@@ -5,13 +5,15 @@ categories: 프로젝트
 tags: [ProPro, 배포]
 excerpt: 엘리스 SW 엔지니어 트랙 1기 과정 중 진행했던 1차 프로젝트 Pro-Pro입니다. 진행했을 당시에는 엘리스 측에서 서버를 제공해주었는데 트랙이 끝난 이후에도 프로젝트를 살려두고 싶은 마음이 있어서 팀원들과 함께 다시 배포하게 됬습니다. 마침 제가 AWS 프리티어 기간이 남아, 직접 해보며 공부해볼 좋은 기회가 생겼습니다.
 thumbnail: /assets/images/project/pro-pro.jpeg
+header:
+  overlay_image: /assets/images/project/pro-pro.jpeg
+  overlay_filter: 0.5 
 toc: true
 toc_sticky: true
 ---
+> [pro-pro](https://propro.kr/)
 
 ## 서론
-![propro배너](/assets/images/project/pro-pro.jpeg)
-> [pro-pro](https://propro.kr/)
 
 엘리스 SW 엔지니어 트랙 1기 과정 중 진행했던 1차 프로젝트 Pro-Pro입니다. 진행했을 당시에는 엘리스 측에서 서버를 제공해주었는데 트랙이 끝난 이후에도 프로젝트를 살려두고 싶은 마음이 있어서 팀원들과 함께 다시 배포하게 됬습니다. 마침 제가 AWS 프리티어 기간이 남아, 직접 해보며 공부해볼 좋은 기회가 생겼습니다.
 

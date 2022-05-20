@@ -5,16 +5,19 @@ categories: 프로젝트
 tags: [ProPro]
 excerpt: "순수 자바스크립트로 프로젝트를 진행했었기에, html을 생성할때 innerHTML 메서드를 이용해 string 형태로 넘겨주곤 했습니다."
 thumbnail: /assets/images/project/pro-pro.jpeg
+header:
+  overlay_image: /assets/images/project/pro-pro.jpeg
+  overlay_filter: 0.5 
 toc: true
 toc_sticky: true
 ---
-
-## 서론
-![propro배너](/assets/images/project/pro-pro.jpeg)
 > [pro-pro](https://propro.kr/)
 
 >[[JS] JS에 JSX 적용해보기](https://velog.io/@jiseong/JS-JS%EC%97%90-JSX-%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0)
 >
+
+## 서론
+
 
 순수 자바스크립트로 프로젝트를 진행했었기에, `html`을 생성할때 `innerHTML` 메서드를 이용해 `string` 형태로 넘겨주곤 했습니다.
 

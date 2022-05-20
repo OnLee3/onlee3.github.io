@@ -5,13 +5,15 @@ categories: 프로젝트
 tags: [ProPro]
 excerpt: "기존 팀프로젝트로 만들었던 propro를 유지보수하고 있습니다. 이번에는 각 컴포넌트의 생성자인 코어 컴포넌트의 생명주기, 메서드를 변경하였고, 그에 따라 영향받는 컴포넌트들을 리팩토링하게 되었습니다."
 thumbnail: /assets/images/project/pro-pro.jpeg
+header:
+  overlay_image: /assets/images/project/pro-pro.jpeg
+  overlay_filter: 0.5 
 toc: true
 toc_sticky: true
 ---
+> [pro-pro](https://propro.kr/)
 
 ## 서론
-![propro배너](/assets/images/project/pro-pro.jpeg)
-> [pro-pro](https://propro.kr/)
 
 기존 팀프로젝트로 만들었던 propro를 유지보수하고 있습니다. 이번에는 각 컴포넌트의 생성자인 코어 컴포넌트의 생명주기, 메서드를 변경하였고, 그에 따라 영향받는 컴포넌트들을 리팩토링하게 되었습니다. 
 
