@@ -3,7 +3,10 @@ title: "[LeetCode] Longest common prefix"
 layout: single
 categories: [알고리즘]
 tags: [LeetCode, 자바스크립트]
-thumbnail: https://leetcode.com/static/images/LeetCode_logo_rvs.png
+thumbnail: /assets/images/algorithm/leetcode_logo.png
+header:
+    overlay_image: /assets/images/algorithm/leetcode.jpg
+    overlay_filter: 0.5
 excerpt: 문자열로 이루어진 배열이 주어집니다. 이 때 각 문자의 공통 접두사를 출력하면 되는 문제입니다.
 toc: true
 toc_sticky: true

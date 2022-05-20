@@ -3,7 +3,10 @@ title: "[LeetCode] Roman to integer"
 layout: single
 categories: [알고리즘]
 tags: [LeetCode, 자바스크립트]
-thumbnail: https://leetcode.com/static/images/LeetCode_logo_rvs.png
+thumbnail: /assets/images/algorithm/leetcode_logo.png
+header:
+    overlay_image: /assets/images/algorithm/leetcode.jpg
+    overlay_filter: 0.5
 excerpt: 연속된 두개의 문자의종류에 따라 값이 변경될 수 있습니다. 따라서 그 둘이 예외 케이스인지 확인해보고 그에 따라 적절한 값을 더해줍니다.
 toc: true
 toc_sticky: true

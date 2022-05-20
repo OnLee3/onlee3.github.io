@@ -3,7 +3,10 @@ title: "[LeetCode] Valid Parentheses"
 layout: single
 categories: [알고리즘]
 tags: [LeetCode, 자바스크립트]
-thumbnail: https://leetcode.com/static/images/LeetCode_logo_rvs.png
+thumbnail: /assets/images/algorithm/leetcode_logo.png
+header:
+    overlay_image: /assets/images/algorithm/leetcode.jpg
+    overlay_filter: 0.5
 excerpt: 같은 타입의 괄호로 닫을 수 있는 것은 물론이고, 순서도 지켜야한다고 명시되있습니다. 가령 `({)}` 같은 형태로 주어진다면 `false`를 리턴해야할겁니다. 그래서 단순히 삽입할 원소와 배열 맨뒤의 원소만 비교하면 되기 때문에 스택 자료를 이용하여 풀이할 수 있는 문제입니다.
 toc: true
 toc_sticky: true

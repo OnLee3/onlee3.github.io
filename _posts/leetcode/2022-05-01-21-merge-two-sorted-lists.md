@@ -3,7 +3,10 @@ title: "[LeetCode] Merge Two Sorted Lists"
 layout: single
 categories: [알고리즘]
 tags: [LeetCode, 자바스크립트]
-thumbnail: https://leetcode.com/static/images/LeetCode_logo_rvs.png
+thumbnail: /assets/images/algorithm/leetcode_logo.png
+header:
+    overlay_image: /assets/images/algorithm/leetcode.jpg
+    overlay_filter: 0.5
 excerpt: "입출력을 리스트 자료구조로 강제 받는 문제입니다. 문제에서 제공하는 메서드를 활용해서, 두 정렬된 리스트를 하나의 정렬된 리스트로 병합하면 됩니다."
 toc: true
 toc_sticky: true
