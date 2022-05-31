@@ -6,7 +6,7 @@ $primary-color: #9999FF !default;
 $border-color: #AAAAFF !default;
 /*$border-color, $footer-background-color origin : #e9dcbe */
 $footer-background-color: $background-color !default;
-$link-color: #6666FF !default;
+$link-color: $primary-color !default;
 $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: $border-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
