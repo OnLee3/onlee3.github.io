@@ -4,6 +4,9 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  {% if site.dark_theme_toggle %}
+  <script src="{{ '/assets/js/custom/dark_mode.js' | relative_url }}"></script>
+  {% endif %}
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
@@ -20,9 +23,3 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
-
-{% if site.after_footer_scripts %}
-  {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
