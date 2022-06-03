@@ -180,7 +180,6 @@ body {
     .btn {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
-      transition: none;
     }
 
     .page__lead {
@@ -308,7 +307,6 @@ body {
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  transition: none;
 }
 
 .taxonomy-item--main:not(a:last-child > .taxonomy-item--main) {
