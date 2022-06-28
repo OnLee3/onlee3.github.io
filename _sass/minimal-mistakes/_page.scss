@@ -106,6 +106,14 @@ body {
     }
   }
 
+  ol {
+    margin-bottom: $indent-var;
+  }
+
+  li > p {
+    margin-bottom: 0;
+  }
+
   a:not(.btn) {
     &:hover {
       text-decoration: underline;
