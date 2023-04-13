@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/blog/2023-01-17-옵시디언 테스트.md",
+                "file": "_posts/baekjoon/2022-06-28-백준-20040-사이클-게임.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/blog/2023-01-17-옵시디언 테스트.md",
+                "file": "_posts/baekjoon/2022-06-28-백준-20040-사이클-게임.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/blog/2023-01-17-옵시디언 테스트.md",
+                "file": "_posts/baekjoon/2022-06-28-백준-20040-사이클-게임.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/blog/2023-01-17-옵시디언 테스트.md"
+                "file": "_posts/baekjoon/2022-06-28-백준-20040-사이클-게임.md"
               }
             }
           },
@@ -146,9 +146,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:새 캔버스 만들기": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
-      "canvas:Create new canvas": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
@@ -158,6 +158,9 @@
   "lastOpenFiles": [
     "_posts/translation/2022-03-23-closure.md",
     "_posts/blog/2022-03-25-dark_mode.md",
+    "_pages/PostsByTags.md",
+    "_pages/PostsByCategories.md",
+    "_pages/About.md",
     "_posts/blog/2023-01-17-옵시디언 테스트.md"
   ]
 }
